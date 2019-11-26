@@ -21,7 +21,6 @@ Table of contents
 Features
 ---------
 
-- "C-a" prefix instead of "C-b" (screen like)
 - support for nested tmux sessions
 - local vs remote specific session configuration
 - scroll and copy mode improvements
@@ -110,18 +109,12 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td><b>iTerm2 key</b></td>
     </tr>
     <tr>
-        <td nowrap><code>C-a</code></td>
-        <td>Default prefix, used instead of "C-b". Same prefix is used in screen program, and it's easy to type. The only drawback of "C-a" is that underlying shell does not receive the keystroke to move to the beginning of the line.
-        </td>
-        <td>-</td>
-    </tr>
-    <tr>
         <td nowrap><code>&lt;prefix&gt; C-e</code></td>
         <td>Open ~/.tmux.conf file in your $EDITOR</td>
         <td>-</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; C-r</code></td>
+        <td><code>&lt;prefix&gt; M-C-e</code></td>
         <td>Reload tmux configuration from ~/.tmux.conf file</td>
         <td>-</td>
     </tr>
@@ -196,14 +189,29 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>^⌘↓</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; &gt;</code></td>
+        <td><code>S-right</code></td>
         <td>Move to next window</td>
         <td>⌘⇧]</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; &lt;</code></td>
+        <td><code>S-left</code></td>
         <td>Move to previous window</td>
         <td>⌘⇧[</td>
+    </tr>
+    <tr>
+        <td><code>C-S-right</code></td>
+        <td>Swap with next window</td>
+        <td>⌘[</td>
+    </tr>
+    <tr>
+        <td><code>C-S-left</code></td>
+        <td>Swap with previous window</td>
+        <td>⌘]</td>
+    </tr>
+    <tr>
+        <td><code>C-t</code></td>
+        <td>Create a new window</td>
+        <td></td>
     </tr>
     <tr>
         <td><code>&lt;prefix&gt; Tab</code></td>
@@ -254,6 +262,11 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td><code>&lt;prefix&gt; C-u</code></td>
         <td>Merge current session with another. Essentially, this moves all windows from current session to another one</td>
         <td>-</td>
+    </tr>
+    <tr>
+        <td><code>C-up</code></td>
+        <td>Show sessions</td>
+        <td></td>
     </tr>
     <tr>
         <td><code>&lt;prefix&gt; d</code></td>
